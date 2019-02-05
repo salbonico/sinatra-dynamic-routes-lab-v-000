@@ -18,9 +18,13 @@ end
 get '/say/:number/:phrase' do
   @times = params[:number].to_i
   @phrase = params[:phrase]
-
-  binding.pry
-
+  @array = []
+  @times.times do
+    @array << @phrase
+  end
+@array.each do |phrase|
+  phrase
+end
 end
 
 
