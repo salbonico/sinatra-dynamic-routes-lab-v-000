@@ -21,7 +21,6 @@ get '/say/:number/:phrase' do
   @array = []
   @times.times {@array << @phrase}
 
-
 end
 
 
