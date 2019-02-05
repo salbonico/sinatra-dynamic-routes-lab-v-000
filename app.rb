@@ -35,6 +35,13 @@ get '/say/:number/:phrase' do
 @array.each do |phrase|
   phrase
 end
+
+
+get '/:operation/:number1/:number2'
+@operation = params[:operation]
+@num1 = params[:number1].to_i
+@num2 = params[:number2].to_i
+
 end
 
 
