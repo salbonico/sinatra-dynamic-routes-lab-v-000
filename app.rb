@@ -22,9 +22,7 @@ get '/say/:number/:phrase' do
   <% @times.times do %>
     <li><%= @phrase %></li>
   <% end %>
-
-
-</ul>
+  </ul>
 end
 
 
