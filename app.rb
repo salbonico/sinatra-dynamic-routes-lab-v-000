@@ -18,11 +18,9 @@ end
 get '/say/:number/:phrase' do
   @times = params[:number].to_i
   @phrase = params[:phrase]
-<ul>
-  <% @times.times do %>
-    <li><%= @phrase %></li>
-  <% end %>
-  </ul>
+
+  binding.pry
+
 end
 
 
