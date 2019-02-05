@@ -52,8 +52,6 @@ elsif @operation == "divide"
   @return = @num1 / @num2
 end
   "#{@return}"
-
-
 end
 
 
