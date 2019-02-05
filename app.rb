@@ -18,7 +18,7 @@ end
 get '/say/:number/:phrase' do
   @times = params[:number].to_i
   @phrase = params[:phrase]
-  @array = []
+
   @times.times {@array << @phrase}
 
 end
