@@ -41,6 +41,18 @@ get '/:operation/:number1/:number2'
 @operation = params[:operation]
 @num1 = params[:number1].to_i
 @num2 = params[:number2].to_i
+@return = 0
+if @operation == "add"
+  @return = @num1 + @num2
+elsif @operation == "subtract"
+  @return = @num1 - @num2
+elsif @operation == "multiply"
+  @return = @num1 * @num2
+elsif @operation == "divide"
+  @return = @num1 / @num2
+end
+  "#{@return}"
+
 
 end
 
